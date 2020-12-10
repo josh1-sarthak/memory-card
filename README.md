@@ -15,3 +15,4 @@ It is implemented in functional components (hooks).
 - Handling and Rendering Inputs
 - hooks- useState
 - hooks- useEffect
+- CSS grid and flexbox
