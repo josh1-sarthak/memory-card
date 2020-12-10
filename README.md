@@ -1,4 +1,4 @@
-# mind-game
+# memory-card
 
 ## Brief Intro
 game built with react that tests your memory and recognition power.

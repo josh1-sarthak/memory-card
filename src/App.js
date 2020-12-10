@@ -15,6 +15,10 @@ const DivContainer = styled.div`
 `;
 
 const DivResult = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   border: 2px solid black;
   padding: 5px;
   height: 700px;
@@ -70,7 +74,7 @@ const App = () => {
     <DivContainer>
       <ShowCards computeScore={handleScore} />
       <DivResult>
-        <h2> Mind Game </h2>
+        <h2> memory-card </h2>
         <p> Current Score: {score} </p>
         <p> Best Score: {bestScore} </p>
       </DivResult>
