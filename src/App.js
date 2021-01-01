@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import ShowCards from './components/ShowCards';
 
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: #8B6220;
+  }
+`;
 
 const DivContainer = styled.div`
   display: grid;
@@ -11,6 +16,7 @@ const DivContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 80vw;
+  height: 700px;
   margin: 30px auto;
 `;
 
@@ -21,7 +27,7 @@ const DivResult = styled.div`
   justify-content: flex-start;
   border: 2px solid black;
   padding: 5px;
-  height: 700px;
+  font-size: 15px;
 `;
 
 const App = () => {
@@ -72,6 +78,7 @@ const App = () => {
 
   return (
     <DivContainer>
+      <GlobalStyle/>
       <ShowCards computeScore={handleScore} />
       <DivResult>
         <h2> memory-card </h2>
