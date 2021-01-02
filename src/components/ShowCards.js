@@ -11,6 +11,7 @@ const DivCards = styled.div`
 
 const DivItem = styled.div`
   border: 4px solid black;
+  border-radius: 10px;
   height: 210px;
   width: 250px;
   display: flex;
