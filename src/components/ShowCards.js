@@ -41,7 +41,7 @@ const ShowCards = (props) => {
             birth: "763 AD",
         },
         {
-            img: "https://lgbtfansdeservebetter.com/static/uploads/2017/05/Lagertha-Katheryn-Winnick.png",
+            img: "https://static.wikia.nocookie.net/vikingstv/images/f/f4/LagerthaSeason6.jpeg/revision/latest/scale-to-width-down/327?cb=20201209232405",
             name: "Lagertha",
             birth: "763 AD",
         },
