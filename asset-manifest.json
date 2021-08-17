@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/memory-card/static/js/main.d2930202.chunk.js",
-    "main.js.map": "/memory-card/static/js/main.d2930202.chunk.js.map",
+    "main.js": "/memory-card/static/js/main.eebab67f.chunk.js",
+    "main.js.map": "/memory-card/static/js/main.eebab67f.chunk.js.map",
     "runtime-main.js": "/memory-card/static/js/runtime-main.408e2319.js",
     "runtime-main.js.map": "/memory-card/static/js/runtime-main.408e2319.js.map",
     "static/js/2.b772ef87.chunk.js": "/memory-card/static/js/2.b772ef87.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.408e2319.js",
     "static/js/2.b772ef87.chunk.js",
-    "static/js/main.d2930202.chunk.js"
+    "static/js/main.eebab67f.chunk.js"
   ]
 }
