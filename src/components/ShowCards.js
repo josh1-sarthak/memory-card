@@ -36,8 +36,8 @@ const ShowCards = (props) => {
             birth: "781 AD",
         },
         {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_we-Plilll136BYLHk8bGVHs34fMEYkygw&usqp=CAU",
-            name: "Ragnar Sigurdsson",
+            img: "https://www.looper.com/img/gallery/the-best-and-worst-things-about-vikings-valhalla/intro-1645815716.jpg",
+            name: "Harald Sigurdsson",
             birth: "763 AD",
         },
         {
