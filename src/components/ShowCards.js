@@ -2,11 +2,11 @@ import React from "react";
 import styled from 'styled-components';
 
 const DivCards = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: none;
-  border: 2px solid black;
-  padding: 5px;
+    display: grid;
+    gap: 0.25rem;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    padding: 5px;
+    min-width: 600px;
 `;
 
 const DivItem = styled.div`
@@ -26,47 +26,47 @@ const ShowCards = (props) => {
 
     const cardDeck = [
         {
-            img: "https://oyster.ignimgs.com/wordpress/stg.ign.com/2016/02/v4_floki_05252015_jh_04412.jpg",
+            img: "/floki.jpg",
             name: "Flóki Vilgerðarson",
             birth: "763 AD",
         },
         {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXB5cjetyQFUh0B-mKKsnmUyd_fWQM9_g6_A&usqp=CAU",
+            img: "/bjorn.jpg",
             name: `Björn "Ironside" Ragnarsson`,
             birth: "781 AD",
         },
         {
-            img: "https://www.looper.com/img/gallery/the-best-and-worst-things-about-vikings-valhalla/intro-1645815716.jpg",
+            img: "/harald.jpg",
             name: "Harald Sigurdsson",
             birth: "763 AD",
         },
         {
-            img: "https://i.pinimg.com/originals/30/87/ca/3087ca8227ba8e3ad7540ea74740d3ab.jpg",
+            img: "/lagertha.jpg",
             name: "Lagertha",
             birth: "763 AD",
         },
         {
-            img: "https://pbs.twimg.com/profile_images/1252127837567492096/gzzQH89p.jpg",
+            img: "/ivar-boneless.jpg",
             name: `Ívarr "Boneless" Ragnarsson`,
             birth: "800 AD",
         },
         {
-            img: "https://i.pinimg.com/736x/26/67/e0/2667e0b34f250afa0b2704c4308f8067.jpg",
+            img: "/ubbe-ragnarsson.jpg",
             name: "Ubbe Ragnarsson",
             birth: "795 AD",
         },
         {
-            img: "https://pbs.twimg.com/media/EYDMrNzXsAAtd6Q.jpg",
+            img: "/hvitserk-ragnarsson.jpg",
             name: "Hvitserk Ragnarsson",
             birth: "797 AD",
         },
         {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHqr_Koc0uyfrNUIs-ZgTprjAan8DbOB2gNw&usqp=CAU",
+            img: "/rollo-normandy.jpg",
             name: "Rollo of Normandy",
             birth: "762 AD",
         },
         {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ck6hEOPhzgu6PV6_dUgjw8u8DgMof6FsKg&usqp=CAU",
+            img: "/athelstan.jpg",
             name: "Athelstan",
             birth: "780 AD",
         }
@@ -76,7 +76,7 @@ const ShowCards = (props) => {
     <DivCards id="parent"> 
         {cardDeck.map((cardItem) => 
             <DivItem key={cardItem.name} onClick={props.computeScore} className="cards">
-                <img src={cardItem.img} width="180px" height="150px" alt={cardItem.name} />
+                <img src={process.env.PUBLIC_URL + cardItem.img} width="180px" height="150px" alt={cardItem.name} />
                 <p> Name: {cardItem.name} <br/>
                     Born: {cardItem.birth}
                 </p>

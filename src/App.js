@@ -9,15 +9,10 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const DivContainer = styled.div`
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: none;
   font-family: monospace;
-  justify-content: center;
-  align-items: center;
-  width: 80vw;
-  height: 700px;
-  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2rem 0 2rem;
 `;
 
 const DivResult = styled.div`
@@ -28,6 +23,9 @@ const DivResult = styled.div`
   border: 2px solid black;
   padding: 5px;
   font-size: 15px;
+  height: 200px;
+  width: 200px;
+  align-self: center;
 `;
 
 const App = () => {
